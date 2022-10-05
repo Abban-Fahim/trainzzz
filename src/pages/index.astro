@@ -1,15 +1,30 @@
 ---
 import "../styles/index.scss";
+
+import Header from "../components/header.svelte";
 ---
 
-<html>
-  <body>
-    <div class="centre">
-      <img src="logo-large.svg" alt="" width="100%" />
-    </div>
-    <div class="centre">
-      <h2>If <strong>liberty</strong> and <strong>justice</strong> are human rights</h2>
-      <h1>Why not mobility?</h1>
-    </div>
-  </body>
-</html>
+<body>
+  <Header client:load selector="#logo" />
+  <div class="centre" id="logo">
+    <img src="logo-large.svg" alt="" width="100%" />
+  </div>
+  <div class="centre">
+    <h2>If <strong>liberty</strong> and <strong>justice</strong> are human rights</h2>
+    <h1>Why not mobility?</h1>
+  </div>
+  <main>
+    <p>
+      Trains 4 Everyone (T4E) is a global movement against self-centric private vehicles. More broadly, it aims to
+      improve the wellbeing of a society through democratic good-will. We aim to raise awareness and call governments
+      worldwide to action, to action that we believe that is as fundamental as a human right.
+    </p>
+    <p>
+      T4E believes that <strong>no one</strong> should have to own a car to be a functioning member of society. But as the
+      ill-informed anarchy of asphalt and gravel roads snakes through city centres and corners, the is becoming more prevalent
+      than before.
+    </p>
+    Sign up to our newsletter to stay informed, and play <strong>your part</strong> in changing the world for the better.
+    <p dir="rtl">يا حبيبي</p>
+  </main>
+</body>

@@ -1,5 +1,11 @@
 @import "variables.scss";
 
 body {
-  background: $beige url("sandy-tx.png") top/150%;
+  background: $beige url("./sandy-tx.png") top/150%;
+  font-family: "Iosevka Etoile", Vazirmatn;
+  padding: 12px;
+}
+
+main {
+  padding: 3px calc(60px + 0.3vw);
 }
