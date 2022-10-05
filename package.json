@@ -1,0 +1,20 @@
+{
+  "name": "trainz4everyone",
+  "version": "1.0.0",
+  "description": "colors:",
+  "main": "index.js",
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/svelte": "^1.0.0",
+    "astro": "^1.2.8",
+    "sass": "^1.54.9",
+    "svelte": "^3.50.1"
+  }
+}

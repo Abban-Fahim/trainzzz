@@ -1,0 +1,15 @@
+---
+const { frontmatter } = Astro.props;
+import "../styles/articles.scss";
+---
+
+<html>
+  <head>
+    <title>
+      {frontmatter.title}
+    </title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
