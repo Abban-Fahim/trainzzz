@@ -2,6 +2,9 @@
 import "../styles/index.scss";
 
 import Header from "../components/header.svelte";
+
+let posts = await Astro.glob("./a/*.md");
+console.log(posts);
 ---
 
 <head>
@@ -28,5 +31,10 @@ import Header from "../components/header.svelte";
     </p>
     Sign up to our newsletter to stay informed, and play <strong>your part</strong> in changing the world for the better.
     <p dir="rtl">يا حبيبي</p>
+    {
+      posts.map((post) => {
+        return <a href={post.url}>{post.frontmatter.title}</a>;
+      })
+    }
   </main>
 </body>

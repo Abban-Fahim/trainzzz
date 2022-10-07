@@ -1,6 +1,15 @@
-$beige: #e5d3b3;
+@import "variables.scss";
 
 body {
   background-color: $beige;
   font-family: "Iosevka Etoile", Vazirmatn;
+}
+
+article {
+  padding: 20px calc(5.8vw + 16px);
+}
+
+#title {
+  font-family: "Permanent Marker", cursive;
+  font-size: calc(68px + 3.6vw);
 }

@@ -1,5 +1,6 @@
 ---
 const { frontmatter } = Astro.props;
+import Header from "../components/header.svelte";
 import "../styles/articles.scss";
 ---
 
@@ -10,6 +11,10 @@ import "../styles/articles.scss";
     </title>
   </head>
   <body>
-    <slot />
+    <Header selector="h1#title" client:load />
+    <article>
+      <h1 id="title">{frontmatter.title}</h1>
+      <slot />
+    </article>
   </body>
 </html>

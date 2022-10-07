@@ -1,6 +1,6 @@
 $beige: #e5d3b3;
 $primary: #76ba99;
-@import url("https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Vazirmatn&display=swap");
 
 @font-face {
   font-family: "Iosevka Etoile";
@@ -46,6 +46,7 @@ header {
   opacity: 0;
   transition: opacity 0.3s ease-out;
   width: 100vw;
+  padding: 200px;
 }
 header.visible {
   opacity: 1;

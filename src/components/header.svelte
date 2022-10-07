@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   export let selector;
+  export let currentPage = undefined;
 
   let headerRef;
   function throttle(fn, wait) {
@@ -27,4 +28,4 @@
   });
 </script>
 
-<header bind:this={headerRef}>lol</header>
+<header bind:this={headerRef}>T4E</header>
