@@ -1,9 +1,13 @@
 @import "variables.scss";
 
 body {
-  background: $beige url("./sandy-tx.png") top/150%;
-  font-family: "Iosevka Etoile", Vazirmatn;
+  background: $beige url("/trainzzz/sandy-tx.png") top/150%;
+  font-family: "Iosevka Etoile", sans-serif;
   padding: 12px;
+}
+
+*[dir="rtl"] {
+  font-family: "Vazirmatn" !important;
 }
 
 main {
