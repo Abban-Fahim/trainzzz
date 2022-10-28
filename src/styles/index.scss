@@ -4,6 +4,7 @@ body {
   background: $beige url("/trainzzz/sandy-tx.png") top/150%;
   font-family: "Iosevka Etoile", sans-serif;
   padding: 12px;
+  display: block !important;
 }
 
 *[dir="rtl"] {

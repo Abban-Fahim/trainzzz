@@ -1,6 +1,8 @@
 ---
-const { frontmatter } = Astro.props;
+const { frontmatter, headings } = Astro.props;
+import { Debug } from "astro/components";
 import Header from "../components/header.svelte";
+import ContentList from "../components/contentsList.svelte";
 import "../styles/articles.scss";
 ---
 
@@ -9,9 +11,11 @@ import "../styles/articles.scss";
     <title>
       {frontmatter.title}
     </title>
+    <link rel="shortcut icon" href="/trainzzz/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <Header selector="h1#title" client:load />
+    <ContentList headings={headings} client:idle />
     <article>
       <h1 id="title">{frontmatter.title}</h1>
       <slot />

@@ -1,6 +1,5 @@
 ---
 import "../styles/index.scss";
-
 import Header from "../components/header.svelte";
 
 let posts = await Astro.glob("./a/*.md");
@@ -29,12 +28,19 @@ console.log(posts);
       T4E believes that <strong>no one</strong> should have to own a car to be a functioning member of society. But as the
       ill-informed invasion of asphalt and gravel roads conquers city centres and corners, cars are becoming ever more prevalent.
     </p>
-    Sign up to our newsletter to stay informed, and play <strong>your part</strong> in changing the world for the better.
     <p dir="rtl">يا حبيبي</p>
-    {
-      posts.map((post) => {
-        return <a href={post.url}>{post.frontmatter.title}</a>;
-      })
-    }
+    <div id="latest-posts">
+      <h2>Latest Posts</h2>
+      {
+        posts.map((post) => {
+          return (
+            <a class="post" href={post.url}>
+              <h4>{post.frontmatter.title}</h4>
+            </a>
+          );
+        })
+      }
+    </div>
+    Sign up to our newsletter to stay informed, and play <strong>your part</strong> in changing the world for the better.
   </main>
 </body>

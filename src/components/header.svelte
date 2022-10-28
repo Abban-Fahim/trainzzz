@@ -28,4 +28,12 @@
   });
 </script>
 
-<header bind:this={headerRef}>T4E</header>
+<header bind:this={headerRef}>
+  <a id="nav-home" href="/trainzzz/"><img src="/logo.png" alt="T4E" /></a>
+  <nav>
+    <a href="/trainzzz/about">Our Mission</a>
+    <a href="/trainzzz/team">Meet The Team</a>
+    <a href="/trainzzz/contact">Contact Us</a>
+    <a href="/trainzzz/world">World Guide</a>
+  </nav>
+</header>

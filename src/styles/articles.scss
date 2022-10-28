@@ -6,10 +6,55 @@ body {
 }
 
 article {
-  padding: 20px calc(5.8vw + 16px);
+  padding: 20px calc(5.8vw + 16px) 20px calc(120px + 6.2vw);
+}
+
+aside {
+  width: calc(80px + 6.2vw);
+  padding: 52px 12px;
+  transition: 0.3s ease-out;
+  position: fixed;
+  top: 120px;
+  grid-column: auto;
+  .toggle {
+    display: none;
+    position: absolute;
+    left: 100%;
+  }
+  h4 {
+  }
+  a {
+    display: block;
+    padding: 6px;
+    border-left: dotted 8px $primary;
+  }
 }
 
 #title {
   font-family: "Permanent Marker", cursive;
   font-size: calc(68px + 3.6vw);
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    grid-template-columns: 100vw;
+  }
+  article {
+    padding: 20px calc(5.8vw + 16px);
+  }
+  aside {
+    .toggle {
+      display: block;
+    }
+    width: calc(100vw - 24px);
+    background-color: $beige;
+    left: -100vw;
+    z-index: 20;
+  }
+  aside.visible {
+    left: 0;
+    .toggle {
+      left: 90vw;
+    }
+  }
 }
